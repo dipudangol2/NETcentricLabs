@@ -3,16 +3,19 @@
  from lower to upper and upper to lower case.
  */
 using System;
-
+using System.Diagnostics;
+using System.Threading.Tasks;
 namespace ConsoleApp
 
 {
 
 	class Program
 	{
-		public static void Main(string[] args)
+		public static async Task Main(string[] args)
 		{
 			Console.WriteLine("Dipu Dangol(28669/078)");
+			string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
+			Console.WriteLine("Executable Path: " + path);
 			//Qno 1 execution
 			//LowerToUpper qno1 = new LowerToUpper();
 			//qno1.Output();
@@ -75,8 +78,41 @@ namespace ConsoleApp
 			//	Console.WriteLine("Press 1 to continue/ anything to stop");
 			//	choice = Console.ReadKey().KeyChar;
 
-			//} while(choice == '1');
+			//} while (choice == '1');
 			//Console.WriteLine("\nStopping...");
+
+
+			//Qno8 execution
+			//Console.WriteLine("Write a program to demonstrate use of Delegate and Events.");
+			//Procedure procedure = new Procedure();
+			//Consumer consumer = new Consumer();
+			//procedure.ProcedureCompleted += consumer.ShowMessage;
+
+			//procedure.BeginProcedure();
+
+			////Qno9 execution
+			//Console.WriteLine("Write a program to show the use of generic classes and methods.");
+			////Generic classes
+			//Compare<int>.CompareThings(1, 1);
+			//Compare<int>.CompareThings(1, 5);
+			//Compare<int>.CompareThings(5, 1);
+			//Compare<string>.CompareThings("hello", "hi");
+			//Compare<string>.CompareThings("hi", "hi");
+			//Compare<string>.CompareThings("hi", "hello");
+			////Generic Methods
+			//ArrayDisplay.DisplayElements<int>([1, 2, 3, 4, 5]);
+			//ArrayDisplay.DisplayElements<double>([1.4, 2.55, 3.3, 4.20, 5.05]);
+			//ArrayDisplay.DisplayElements<string>(["RAM", "MOTHERBOARD", "CPU", "GPU"]);
+
+			//Qno10 execution
+			//Console.WriteLine("Write a program to demonstrate the use of the method as a condition in the LINQ.");
+			//MethodInLINQ method = new MethodInLINQ();
+			//method.Demonstrate();
+
+			//Qno11 execution
+			Console.WriteLine("Demonstrate Asynchronous programming with async, await, Task in C#.");
+			await AsyncTasks.AsyncMethod();
+
 
 
 
