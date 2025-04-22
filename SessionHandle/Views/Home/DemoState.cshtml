@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "State Management";
+
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <span><strong>Temp Data:</strong>@ViewBag.Message</span><br>
+    <span><strong>User:</strong>@ViewBag.SessionUser</span><br>
+    <span><strong>Request Time:</strong>@ViewBag.RequestTime</span>
+    @* <a asp-controller="Home" asp-action="EliminateSession">RemoveSessionData</a> *@
+</p>

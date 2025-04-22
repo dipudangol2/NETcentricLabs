@@ -1,0 +1,15 @@
+﻿@model formsubmitandregistration.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "Registration Result";
+}
+
+<h2>Submitted Information</h2>
+
+<table border="1" cellpadding="10">
+    <tr><th>Field</th><th>Value</th></tr>
+    <tr><td>Username</td><td>@Model.Username</td></tr>
+    <tr><td>Gender</td><td>@Model.Gender</td></tr>
+    <tr><td>Courses</td><td>@string.Join(", ", Model.Courses ?? new List<string>())</td></tr>
+    <tr><td>Country</td><td>@Model.Country</td></tr>
+</table>

@@ -21,8 +21,8 @@ namespace ConsoleApp
 			//qno1.Output();
 
 			//Qno 2 execution
-			//CharacterInterchange qno2 = new CharacterInterchange();
-			//qno2.Output();
+			CharacterInterchange qno2 = new CharacterInterchange();
+			qno2.Output();
 
 			//Qno 3 execution
 			//Console.WriteLine("Write a program to demonstrate the basics of class and object");
@@ -110,8 +110,8 @@ namespace ConsoleApp
 			//method.Demonstrate();
 
 			//Qno11 execution
-			Console.WriteLine("Demonstrate Asynchronous programming with async, await, Task in C#.");
-			await AsyncTasks.AsyncMethod();
+			//Console.WriteLine("Demonstrate Asynchronous programming with async, await, Task in C#.");
+			//await AsyncTasks.AsyncMethod();
 
 
 

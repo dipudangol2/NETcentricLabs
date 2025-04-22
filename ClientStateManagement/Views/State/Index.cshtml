@@ -1,0 +1,9 @@
+﻿@{
+	ViewData["Title"] = "Setting Cookie and hidden field";
+}
+<form method="post" asp-controller="State" asp-action="Submit">
+	<label for="username">Username:</label>
+	<input type="text" name="username" required/>
+	<input type="hidden" name="hiddenValue" value="IHaveASecretThatNobodyKnowsLol" />
+	<input type="submit" />
+</form>
